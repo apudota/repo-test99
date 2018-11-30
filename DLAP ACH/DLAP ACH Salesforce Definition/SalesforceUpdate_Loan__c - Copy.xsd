@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://SBA.gov/DLAPACH/Loan__c" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sync">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="before">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Loan__c">
+                      <xs:complexType>
+                        <xs:attribute name="Id" type="xs:string" />
+                        <xs:attribute name="OwnerId" type="xs:string" />
+                        <xs:attribute name="IsDeleted" type="xs:boolean" />
+                        <xs:attribute name="Name" type="xs:string" />
+                        <xs:attribute name="CreatedDate" type="xs:dateTime" />
+                        <xs:attribute name="CreatedById" type="xs:string" />
+                        <xs:attribute name="LastModifiedDate" type="xs:dateTime" />
+                        <xs:attribute name="LastModifiedById" type="xs:string" />
+                        <xs:attribute name="SystemModstamp" type="xs:dateTime" />
+                        <xs:attribute name="LastActivityDate" type="xs:dateTime" />
+                        <xs:attribute name="LastViewedDate" type="xs:dateTime" />
+                        <xs:attribute name="LastReferencedDate" type="xs:dateTime" />
+                        <xs:attribute name="Age_in_Commitments__c" type="xs:double" />
+                        <xs:attribute name="Application__c" type="xs:string" />
+                        <xs:attribute name="Approval_Type__c" type="xs:string" />
+                        <xs:attribute name="Assigned_To__c" type="xs:string" />
+                        <xs:attribute name="Borrower_Name__c" type="xs:string" />
+                        <xs:attribute name="Companion__c" type="xs:boolean" />
+                        <xs:attribute name="Date_Assigned_to_Commitment_Team_Member__c" type="xs:dateTime" />
+                        <xs:attribute name="Date_Assigned_to_Queue__c" type="xs:dateTime" />
+                        <xs:attribute name="Date_Time_Commitment_Letter_Generated__c" type="xs:dateTime" />
+                        <xs:attribute name="Date_assigned_to_Case_Manager_Queue__c" type="xs:dateTime" />
+                        <xs:attribute name="Deadline_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Disaster_Declaration__c" type="xs:string" />
+                        <xs:attribute name="EIDL_Unsecured_Limit__c" type="xs:double" />
+                        <xs:attribute name="ETRAN_Loan_Number__c" type="xs:string" />
+                        <xs:attribute name="Interest_Rate__c" type="xs:double" />
+                        <xs:attribute name="Issued_Note_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Loan_Amount__c" type="xs:double" />
+                        <xs:attribute name="Loan_Type__c" type="xs:string" />
+                        <xs:attribute name="Logged_in_User__c" type="xs:boolean" />
+                        <xs:attribute name="Maturity_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Months_Deferred__c" type="xs:double" />
+                        <xs:attribute name="My_Team_Owned__c" type="xs:boolean" />
+                        <xs:attribute name="Note_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Obligated_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Payment_Amount__c" type="xs:double" />
+                        <xs:attribute name="Payment_Frequency__c" type="xs:string" />
+                        <xs:attribute name="Phys_Unsecured_Limit__c" type="xs:double" />
+                        <xs:attribute name="Production_Capacity__c" type="xs:double" />
+                        <xs:attribute name="Secure__c" type="xs:boolean" />
+                        <xs:attribute name="Servicing_Office__c" type="xs:double" />
+                        <xs:attribute name="Status__c" type="xs:string" />
+                        <xs:attribute name="Total_Term__c" type="xs:double" />
+                        <xs:attribute name="Next_Payment_Due_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Initiate_Disbursement__c" type="xs:string" />
+                        <xs:attribute name="Loan_Modification__c" type="xs:string" />
+                        <xs:attribute name="Run_Disbursement_Interface__c" type="xs:boolean" />
+                        <xs:attribute name="Trigger_PB_for_Loan_Mod__c" type="xs:boolean" />
+                        <xs:attribute name="Proceed_To__c" type="xs:string" />
+                        <xs:attribute name="Disbursed_Amount_Real_Estate_Repair__c" type="xs:double" />
+                        <xs:attribute name="Drawloop_Next__c" type="xs:string" />
+                        <xs:attribute name="Total_Eligible_Contents__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Contractor_Malfeasance__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Custom_Contents__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Custom_RE__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Interim_Financing__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Mitigation__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Motor_Vehicle__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Real_Estate_Other__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Real_Estate_Repair__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Refinancing__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Repay_IHP__c" type="xs:double" />
+                        <xs:attribute name="ACH_Account_Number__c" type="xs:string" />
+                        <xs:attribute name="ACH_Routing_Number__c" type="xs:string" />
+                        <xs:attribute name="ACH_Account_Type__c" type="xs:string" />
+                        <xs:attribute name="Bank_Name__c" type="xs:string" />
+                        <xs:attribute name="Account_Holder_Name__c" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="after">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Loan__c">
+                      <xs:complexType>
+                        <xs:attribute name="Id" type="xs:string" />
+                        <xs:attribute name="OwnerId" type="xs:string" />
+                        <xs:attribute name="IsDeleted" type="xs:boolean" />
+                        <xs:attribute name="Name" type="xs:string" />
+                        <xs:attribute name="CreatedDate" type="xs:dateTime" />
+                        <xs:attribute name="CreatedById" type="xs:string" />
+                        <xs:attribute name="LastModifiedDate" type="xs:dateTime" />
+                        <xs:attribute name="LastModifiedById" type="xs:string" />
+                        <xs:attribute name="SystemModstamp" type="xs:dateTime" />
+                        <xs:attribute name="LastActivityDate" type="xs:dateTime" />
+                        <xs:attribute name="LastViewedDate" type="xs:dateTime" />
+                        <xs:attribute name="LastReferencedDate" type="xs:dateTime" />
+                        <xs:attribute name="Age_in_Commitments__c" type="xs:double" />
+                        <xs:attribute name="Application__c" type="xs:string" />
+                        <xs:attribute name="Approval_Type__c" type="xs:string" />
+                        <xs:attribute name="Assigned_To__c" type="xs:string" />
+                        <xs:attribute name="Borrower_Name__c" type="xs:string" />
+                        <xs:attribute name="Companion__c" type="xs:boolean" />
+                        <xs:attribute name="Date_Assigned_to_Commitment_Team_Member__c" type="xs:dateTime" />
+                        <xs:attribute name="Date_Assigned_to_Queue__c" type="xs:dateTime" />
+                        <xs:attribute name="Date_Time_Commitment_Letter_Generated__c" type="xs:dateTime" />
+                        <xs:attribute name="Date_assigned_to_Case_Manager_Queue__c" type="xs:dateTime" />
+                        <xs:attribute name="Deadline_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Disaster_Declaration__c" type="xs:string" />
+                        <xs:attribute name="EIDL_Unsecured_Limit__c" type="xs:double" />
+                        <xs:attribute name="ETRAN_Loan_Number__c" type="xs:string" />
+                        <xs:attribute name="Interest_Rate__c" type="xs:double" />
+                        <xs:attribute name="Issued_Note_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Loan_Amount__c" type="xs:double" />
+                        <xs:attribute name="Loan_Type__c" type="xs:string" />
+                        <xs:attribute name="Logged_in_User__c" type="xs:boolean" />
+                        <xs:attribute name="Maturity_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Months_Deferred__c" type="xs:double" />
+                        <xs:attribute name="My_Team_Owned__c" type="xs:boolean" />
+                        <xs:attribute name="Note_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Obligated_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Payment_Amount__c" type="xs:double" />
+                        <xs:attribute name="Payment_Frequency__c" type="xs:string" />
+                        <xs:attribute name="Phys_Unsecured_Limit__c" type="xs:double" />
+                        <xs:attribute name="Production_Capacity__c" type="xs:double" />
+                        <xs:attribute name="Secure__c" type="xs:boolean" />
+                        <xs:attribute name="Servicing_Office__c" type="xs:double" />
+                        <xs:attribute name="Status__c" type="xs:string" />
+                        <xs:attribute name="Total_Term__c" type="xs:double" />
+                        <xs:attribute name="Next_Payment_Due_Date__c" type="xs:dateTime" />
+                        <xs:attribute name="Initiate_Disbursement__c" type="xs:string" />
+                        <xs:attribute name="Loan_Modification__c" type="xs:string" />
+                        <xs:attribute name="Run_Disbursement_Interface__c" type="xs:boolean" />
+                        <xs:attribute name="Trigger_PB_for_Loan_Mod__c" type="xs:boolean" />
+                        <xs:attribute name="Proceed_To__c" type="xs:string" />
+                        <xs:attribute name="Disbursed_Amount_Real_Estate_Repair__c" type="xs:double" />
+                        <xs:attribute name="Drawloop_Next__c" type="xs:string" />
+                        <xs:attribute name="Total_Eligible_Contents__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Contractor_Malfeasance__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Custom_Contents__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Custom_RE__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Interim_Financing__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Mitigation__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Motor_Vehicle__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Real_Estate_Other__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Real_Estate_Repair__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Refinancing__c" type="xs:double" />
+                        <xs:attribute name="Total_Eligible_Repay_IHP__c" type="xs:double" />
+                        <xs:attribute name="ACH_Account_Number__c" type="xs:string" />
+                        <xs:attribute name="ACH_Routing_Number__c" type="xs:string" />
+                        <xs:attribute name="ACH_Account_Type__c" type="xs:string" />
+                        <xs:attribute name="Bank_Name__c" type="xs:string" />
+                        <xs:attribute name="Account_Holder_Name__c" type="xs:string" />                        
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Response">
+    <xs:complexType>
+      <xs:attribute name="AffectedRows" type="xs:int" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

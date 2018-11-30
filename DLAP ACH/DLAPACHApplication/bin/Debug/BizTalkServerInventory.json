@@ -1,0 +1,38 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "2.0.9.16",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPACHDefinition",
+      "Path": "bin\\DLAPACHDefinition.dll"
+    },
+    {
+      "Name": "DLAPACHSalesforceDefinition",
+      "Path": "bin\\DLAPACHSalesforceDefinition.dll"
+    },
+    {
+      "Name": "DLAPACHLogic",
+      "Path": "bin\\DLAPACHLogic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [
+    "SFRESTADDRESS",
+    "SFRESTADDRESS"
+  ],
+  "DeploymentSequence": [
+    "DLAPACHDefinition",
+    "DLAPACHSalesforceDefinition",
+    "DLAPACHLogic",
+    "Binding"
+  ]
+}

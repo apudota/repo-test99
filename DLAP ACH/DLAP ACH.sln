@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP ACH Definition", "DLAP ACH Definition\DLAP ACH Definition.btproj", "{4A339C15-86B3-44E0-8E94-5D1109493CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP ACH Logic", "DLAP ACH Logic\DLAP ACH Logic.btproj", "{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP ACH Salesforce Definition", "DLAP ACH Salesforce Definition\DLAP ACH Salesforce Definition.btproj", "{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{91FCDDEA-AABE-4A06-90C1-CBC01E5CB311}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\BizTalk Code Review Check List - DLAP ACH.docx = Deployment\BizTalk Code Review Check List - DLAP ACH.docx
+		Deployment\DLAPACH -soapui-project.xml = Deployment\DLAPACH -soapui-project.xml
+		Deployment\DLAPACH_Deployment_Instructions.docx = Deployment\DLAPACH_Deployment_Instructions.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{9388C936-2D63-41B0-A064-614D3FD753D0}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.0", "2.0.0.0", "{08546AF3-59BF-4382-BA2D-9FE7F67D9039}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.0\DLAP ACH 2.0.0.0.msi = Deployment\2.0.0.0\DLAP ACH 2.0.0.0.msi
+		Deployment\2.0.0.0\DLAP ACH.BindingInfo 2.0.0.0.xml = Deployment\2.0.0.0\DLAP ACH.BindingInfo 2.0.0.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.1", "2.0.0.1", "{63C1EEC1-6CCD-4C49-A4FA-856DA930535D}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.1\DLAP ACH 2.0.0.1.msi = Deployment\2.0.0.1\DLAP ACH 2.0.0.1.msi
+		Deployment\2.0.0.1\DLAP ACH.BindingInfo 2.0.0.1.xml = Deployment\2.0.0.1\DLAP ACH.BindingInfo 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.2", "2.0.0.2", "{3414193A-9CE6-44B5-902E-20557AB73E80}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.2\DLAP ACH 2.0.0.2.msi = Deployment\2.0.0.2\DLAP ACH 2.0.0.2.msi
+		Deployment\2.0.0.2\DLAP ACH.BindingInfo 2.0.0.2.xml = Deployment\2.0.0.2\DLAP ACH.BindingInfo 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.4.0", "2.0.4.0", "{C4D1A5BE-E787-4B02-92E5-0F4076DE0172}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.4.0\DLAP ACH 2.0.4.0.msi = Deployment\2.0.4.0\DLAP ACH 2.0.4.0.msi
+		Deployment\2.0.4.0\DLAP ACH.BindingInfo 2.0.4.0.xml = Deployment\2.0.4.0\DLAP ACH.BindingInfo 2.0.4.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.4", "2.0.9.4", "{6EF25B47-4488-4957-8944-23F6A10F8169}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.4\DLAP ACH.BindingInfo 2.0.9.4.xml = Deployment\2.0.9.4\DLAP ACH.BindingInfo 2.0.9.4.xml
+		Deployment\2.0.9.4\DLAP ACH.msi = Deployment\2.0.9.4\DLAP ACH.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Local", "Local", "{A3A4E17D-C4FA-4C91-A00E-68241B778D74}"
+	ProjectSection(SolutionItems) = preProject
+		Local\DLAP ACH.BindingInfo 2.0.9.4 DEV.xml = Local\DLAP ACH.BindingInfo 2.0.9.4 DEV.xml
+	EndProjectSection
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "DLAPACHApplication", "DLAPACHApplication\DLAPACHApplication.btaproj", "{74C728B3-09E4-49F2-94A5-E99DDDAF01D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCFDeploy", "WCFDeploy", "{DB8614A1-84E7-4019-8AB5-ACD6A312BA17}"
+	ProjectSection(SolutionItems) = preProject
+		WCFDeploy\WCFService.zip = WCFDeploy\WCFService.zip
+	EndProjectSection
+EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "PowerShellProject1", "PowerShellProject1\PowerShellProject1.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A339C15-86B3-44E0-8E94-5D1109493CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A339C15-86B3-44E0-8E94-5D1109493CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A339C15-86B3-44E0-8E94-5D1109493CAC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4A339C15-86B3-44E0-8E94-5D1109493CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A339C15-86B3-44E0-8E94-5D1109493CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A339C15-86B3-44E0-8E94-5D1109493CAC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ABACFE-1D24-4F8C-BF12-E5F46CEEB275}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A41F0E3-C50C-40ED-97B5-6B352B349BE3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{74C728B3-09E4-49F2-94A5-E99DDDAF01D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C728B3-09E4-49F2-94A5-E99DDDAF01D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C728B3-09E4-49F2-94A5-E99DDDAF01D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C728B3-09E4-49F2-94A5-E99DDDAF01D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08546AF3-59BF-4382-BA2D-9FE7F67D9039} = {91FCDDEA-AABE-4A06-90C1-CBC01E5CB311}
+		{63C1EEC1-6CCD-4C49-A4FA-856DA930535D} = {91FCDDEA-AABE-4A06-90C1-CBC01E5CB311}
+		{3414193A-9CE6-44B5-902E-20557AB73E80} = {91FCDDEA-AABE-4A06-90C1-CBC01E5CB311}
+		{C4D1A5BE-E787-4B02-92E5-0F4076DE0172} = {91FCDDEA-AABE-4A06-90C1-CBC01E5CB311}
+		{6EF25B47-4488-4957-8944-23F6A10F8169} = {91FCDDEA-AABE-4A06-90C1-CBC01E5CB311}
+	EndGlobalSection
+EndGlobal

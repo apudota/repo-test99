@@ -1,0 +1,1170 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="ee7f668c-d3a3-4fa8-9a12-af2501ad7acf" LowerBound="1.1" HigherBound="303.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="DLAPACH" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="39aa36a1-e851-4898-a1e5-0fb4505bf75f" ParentLink="Module_PortType" LowerBound="32.1" HigherBound="39.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ACHPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="8da41934-377e-4ff1-8474-0a94f7d8ce77" ParentLink="PortType_OperationDeclaration" LowerBound="34.1" HigherBound="38.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="ccd38ab7-9cb3-4e4b-9f78-808d271bc7b9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="36.13" HigherBound="36.27">
+                    <om:Property Name="Ref" Value="DLAPACH.ACHRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1e54c887-d02f-4147-8bc1-17d5893d63df" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="36.29" HigherBound="36.44">
+                    <om:Property Name="Ref" Value="DLAPACH.ACHResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="d1793abf-ca5e-48be-b897-93d2a46ea300" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="36.46" HigherBound="36.74">
+                    <om:Property Name="Ref" Value="DLAPACH.ACHFaultResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Fault" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="33c0d771-7c5d-4558-8e33-00c60d33b106" ParentLink="Module_PortType" LowerBound="39.1" HigherBound="46.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestLoanQueryPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="f3c8e290-b58b-4d92-9072-58bc02285e83" ParentLink="PortType_OperationDeclaration" LowerBound="41.1" HigherBound="45.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="d053d383-905d-45b2-b5d2-c3df860363b4" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="43.13" HigherBound="43.37">
+                    <om:Property Name="Ref" Value="DLAPACH.RestLoanQueryRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e9897af2-07f7-4c58-b882-6adebb81be0a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="43.39" HigherBound="43.64">
+                    <om:Property Name="Ref" Value="DLAPACH.RestLoanQueryResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cdebd251-fae0-44c8-8ec0-1ce8f7e2e199" ParentLink="Module_PortType" LowerBound="46.1" HigherBound="53.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestLoanUpdatePortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="c930612a-e246-452e-bce8-5e93d152974d" ParentLink="PortType_OperationDeclaration" LowerBound="48.1" HigherBound="52.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="97c0fd89-30ee-42a7-908a-5a53f417466c" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="50.13" HigherBound="50.38">
+                    <om:Property Name="Ref" Value="DLAPACH.RestLoanUpdateRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="18645f0d-8ccc-4c5d-99ad-d0eab2728205" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="50.40" HigherBound="50.66">
+                    <om:Property Name="Ref" Value="DLAPACH.RestLoanUpdateResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="2332653f-b356-4e86-ae01-b186ff06c62e" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ACHRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="3d826da6-94d5-49eb-bb6d-701ed7fda867" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="DLAPACHDefinition.ACHRequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="976f2b10-4d62-44bd-a089-546969ade784" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ACHResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="0d93cdb1-d9e1-4883-85f5-df16ed417ac4" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="DLAPACHDefinition.ACHResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b694341e-d13e-45bb-9cb8-1b19536fd4ee" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestLoanUpdateRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="69e86f2c-a696-46bf-b621-e71817495da2" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="DLAPACHSalesforceDefinition.RestLoan.SaveRequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="13a2e393-e229-4e3a-a1e9-1486bf9b01b4" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestLoanUpdateResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="e53957ea-3aa6-40d5-9c27-05a190d93676" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="DLAPACHSalesforceDefinition.RestLoan.results" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="cc47ca30-18d8-4c71-821a-c64b9f11c41e" ParentLink="Module_MessageType" LowerBound="20.1" HigherBound="24.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ACHFaultResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="5b76c900-f5f6-441e-b9fd-45db98a11524" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="ClassName" Value="DLAPACHDefinition.ACHFault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="7bd27578-8a1a-4cdc-9a86-19c3588f19fc" ParentLink="Module_MessageType" LowerBound="24.1" HigherBound="28.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestLoanQueryRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="1a46fe86-7c47-4aff-babe-13c51ffe8653" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="ClassName" Value="DLAPACHSalesforceDefinition.RestLoanQuery.Request" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1578026f-f4a0-4141-a099-f4b599675cfd" ParentLink="Module_MessageType" LowerBound="28.1" HigherBound="32.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestLoanQueryResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="e9a44bcf-d409-427a-8fd8-279297069075" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="ClassName" Value="DLAPACHSalesforceDefinition.RestLoanQuery.QueryResult" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="23298f27-79e1-4b53-8921-5d37551fc99a" ParentLink="Module_ServiceDeclaration" LowerBound="53.1" HigherBound="302.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessLogic" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="518d5615-80ab-4be9-87bf-97a77e1961b2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6d40e8a1-1cb5-40bd-8c8f-0bf10ffa6bf3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Status" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ba793c4b-1aac-477a-90ea-2ba1d3ebebf2" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Stage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e09bbbf0-c6ad-4d42-a7b2-7968e569e2df" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationNumber" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dd5ab34a-82b9-491a-bb7a-1b90a22295c4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3307a3b8-b007-4035-ac40-ff8670c9e8c1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7ac4159f-4ed6-4dbc-b443-812d96171ac8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4ab09946-e561-4759-90b9-2e184474752f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LoanName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0f804338-9df2-493e-b4f0-5e0e92da348d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageTemp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="22e499a9-a61a-4363-b0f2-7f5864428746" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempFaultResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="900e88a8-a933-4fbd-8420-5025928d1fbe" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Empty" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0789d444-8d05-427d-9240-dec44fccdd91" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LoanNameInfo" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4ee8c676-db16-4438-8efc-b6ad4b73f58e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="81.1" HigherBound="82.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SOQL_LoanInfo_QUERY" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0a49630b-db94-4b10-87b0-716e3e7b1009" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="82.1" HigherBound="83.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanSFID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bcc01e46-4baa-45d7-a126-5473e5b4acee" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="83.1" HigherBound="84.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="bacf388c-455e-4860-95f1-d9b800e7771d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="84.1" HigherBound="85.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanNameID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5c776587-b4f2-4cfa-9e1a-1a1d524a361a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="85.1" HigherBound="86.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Exception" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanUpdateException" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="267ae95e-8829-4ecf-8844-dc5680fc8b33" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="62.1" HigherBound="63.1">
+                <om:Property Name="Type" Value="DLAPACH.ACHRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ACHRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d686e361-9093-482d-b41e-fab797c3666a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="Type" Value="DLAPACH.ACHResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ACHResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="920bf100-3a2a-48dd-9433-722913f3163d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="Type" Value="DLAPACH.RestLoanUpdateRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanUpdateRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="52fe076d-7df3-49af-8b2e-3566d1385731" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="Type" Value="DLAPACH.RestLoanUpdateResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanUpdateResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="dac8242a-ac50-4adc-bdc1-2f375365cfef" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="Type" Value="DLAPACH.ACHFaultResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ACHFaultResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8bbde5e0-0056-4d87-b993-f9bc36a6078a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="Type" Value="DLAPACH.RestLoanQueryRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanQueryRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8c0b4af5-01bf-47d7-842f-082a731db71b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="Type" Value="DLAPACH.RestLoanQueryResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanQueryResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="abc7952a-84d5-4381-80f3-f9bcf8e8c675" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="cadd4502-49eb-4c86-95af-06445e7946f6" ParentLink="ServiceBody_Statement" LowerBound="88.1" HigherBound="106.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ACHPort" />
+                    <om:Property Name="MessageName" Value="ACHRequestMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive ACH Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="7ff5e61d-f3f9-40c1-8ff8-11620620bc42" ParentLink="ServiceBody_Statement" LowerBound="106.1" HigherBound="281.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ACH Error Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Task" OID="3a93584e-2675-4242-8d56-0e2e2d385abf" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="203.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ACH Loan Update Process" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="3c01a032-23e1-4523-99bc-591651f8ce43" ParentLink="ComplexStatement_Statement" LowerBound="111.1" HigherBound="126.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct Loan Query Request Msg" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="36b7afae-3333-468d-a89c-3bbb792109ea" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="116.1">
+                                <om:Property Name="ClassName" Value="DLAPACHLogic.MakeUpdateLoanRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Make Loan Query Request" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="2621f989-740b-4f7a-b6cf-29a4eb0d09b2" ParentLink="Transform_InputMessagePartRef" LowerBound="115.111" HigherBound="115.136">
+                                    <om:Property Name="MessageRef" Value="ACHRequestMsg" />
+                                    <om:Property Name="PartRef" Value="MessagePart" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="f1d9d9e4-437f-49ae-8c81-79467746fa92" ParentLink="Transform_OutputMessagePartRef" LowerBound="115.36" HigherBound="115.71">
+                                    <om:Property Name="MessageRef" Value="RestLoanQueryRequestMsg" />
+                                    <om:Property Name="PartRef" Value="MessagePart" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="3e7df64c-01e7-4990-b927-295bfc56be7d" ParentLink="ComplexStatement_Statement" LowerBound="116.1" HigherBound="125.1">
+                                <om:Property Name="Expression" Value="//Construct SOQL Query&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;LoanNameInfo = xpath(ACHRequestMsg.MessagePart,&quot;string(/*[local-name()='ACHRequest' and namespace-uri()='http://SBA.gov/DLAPACH/ACHRequestRequest']/*[local-name()='LoanName' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;SOQL_LoanInfo_QUERY = @&quot;SELECT Id, Name,Application__r.Name FROM Loan__c WHERE Name IN &quot;+&quot;(&quot;+&quot;'&quot;+LoanNameInfo+&quot;'&quot;+&quot;)&quot;;&#xD;&#xA;&#xD;&#xA;RestLoanQueryRequestMsg(DLAPACHSalesforceDefinition.SOQL_LoanId_QUERY) = SOQL_LoanInfo_QUERY; &#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Make SOQL" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="49641a4e-c6f7-4cb4-bfba-d813c94633f4" ParentLink="Construct_MessageRef" LowerBound="112.31" HigherBound="112.54">
+                                <om:Property Name="Ref" Value="RestLoanQueryRequestMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="9dba8d47-f655-4096-a957-ba990def8e92" ParentLink="ComplexStatement_Statement" LowerBound="126.1" HigherBound="128.1">
+                            <om:Property Name="PortName" Value="RestLoanQueryPort" />
+                            <om:Property Name="MessageName" Value="RestLoanQueryRequestMsg" />
+                            <om:Property Name="OperationName" Value="Operation" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send Loan Query Request" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="181fbe45-a0a1-498f-91cd-4e42c9d2fd99" ParentLink="ComplexStatement_Statement" LowerBound="128.1" HigherBound="130.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="RestLoanQueryPort" />
+                            <om:Property Name="MessageName" Value="RestLoanQueryResponseMsg" />
+                            <om:Property Name="OperationName" Value="Operation" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive Loan Query Response" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="a1ac0205-4fa3-46e7-8872-73f67dfeb3b8" ParentLink="ComplexStatement_Statement" LowerBound="130.1" HigherBound="139.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;RestLoanSFID = xpath(RestLoanQueryResponseMsg.MessagePart,&quot;string(/*[local-name()='QueryResult' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='records' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='Id' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan'])&quot;);&#xD;&#xA;&#xD;&#xA;ApplicationNumber = xpath(RestLoanQueryResponseMsg.MessagePart,&quot;string(/*[local-name()='QueryResult' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='records' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='Application__r' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='Name' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan'])&quot;);&#xD;&#xA;&#xD;&#xA;OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Extract Rest Values" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="8b4dc74f-7a6b-4614-b960-6475a094586c" ParentLink="ComplexStatement_Statement" LowerBound="139.1" HigherBound="203.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Valid Loan Name?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="e002039c-1012-4faa-b144-0bce1fc0ecb5" ParentLink="ReallyComplexStatement_Branch" LowerBound="140.21" HigherBound="194.1">
+                                <om:Property Name="Expression" Value="(!System.String.IsNullOrEmpty(RestLoanSFID))" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Valid Loan" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="2fe45d13-4aa2-4716-ab4a-8e19f1c89fcb" ParentLink="ComplexStatement_Statement" LowerBound="142.1" HigherBound="150.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Update Loan Request Msg" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Transform" OID="033bb38e-4cd2-4f26-bc6f-4abde9772fd2" ParentLink="ComplexStatement_Statement" LowerBound="145.1" HigherBound="147.1">
+                                        <om:Property Name="ClassName" Value="DLAPACHLogic.MakeRestLoanUpdateRequest" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Make Rest Loan Update Request" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="d4a55c09-d2db-4143-a60c-bf5556c5b490" ParentLink="Transform_InputMessagePartRef" LowerBound="146.120" HigherBound="146.145">
+                                            <om:Property Name="MessageRef" Value="ACHRequestMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_5" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="2776f351-6645-4d22-8f29-abfd8eeb1f68" ParentLink="Transform_OutputMessagePartRef" LowerBound="146.40" HigherBound="146.76">
+                                            <om:Property Name="MessageRef" Value="RestLoanUpdateRequestMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_6" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="489003ad-2ff6-4261-b82b-85015185867b" ParentLink="ComplexStatement_Statement" LowerBound="147.1" HigherBound="149.1">
+                                        <om:Property Name="Expression" Value="xpath(RestLoanUpdateRequestMsg.MessagePart,&quot;/*[local-name()='SaveRequest' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='records' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='Id' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']&quot;) = RestLoanSFID;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Assgin Loan Id" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="6f7f414c-0bdb-4f2b-bfca-7acf1f233f3a" ParentLink="Construct_MessageRef" LowerBound="143.35" HigherBound="143.59">
+                                        <om:Property Name="Ref" Value="RestLoanUpdateRequestMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="64d4b83d-c21a-4a54-af72-18e6b64eb256" ParentLink="ComplexStatement_Statement" LowerBound="150.1" HigherBound="152.1">
+                                    <om:Property Name="PortName" Value="RestLoanUpdatePort" />
+                                    <om:Property Name="MessageName" Value="RestLoanUpdateRequestMsg" />
+                                    <om:Property Name="OperationName" Value="Operation" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send Rest Update Request" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Receive" OID="07515f82-a111-432d-b9dc-027b732f2c90" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="154.1">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="RestLoanUpdatePort" />
+                                    <om:Property Name="MessageName" Value="RestLoanUpdateResponseMsg" />
+                                    <om:Property Name="OperationName" Value="Operation" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Receive Rest Update Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="77f00183-29ed-4776-81b5-e06777fd6cc8" ParentLink="ComplexStatement_Statement" LowerBound="154.1" HigherBound="163.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;RestLoanMessage = xpath(RestLoanUpdateResponseMsg.MessagePart,&quot;string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='errors' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='message' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan'])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;RestLoanNameID = xpath(RestLoanUpdateResponseMsg.MessagePart,&quot;string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='id' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan'])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Extract Rest Values" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Decision" OID="a5883a29-9d55-4460-8878-23e81db123d1" ParentLink="ComplexStatement_Statement" LowerBound="163.1" HigherBound="175.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Valid Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="DecisionBranch" OID="964613da-5b09-4075-a101-0e76eace55a2" ParentLink="ReallyComplexStatement_Branch" LowerBound="164.25" HigherBound="175.1">
+                                        <om:Property Name="Expression" Value="!System.String.IsNullOrWhiteSpace(RestLoanMessage) &amp;&amp; (RestLoanNameID.Length == 0)" />
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Error" />
+                                        <om:Property Name="Signal" Value="True" />
+                                        <om:Element Type="VariableAssignment" OID="5593b678-ee85-45c7-bcae-ee308c73c5b9" ParentLink="ComplexStatement_Statement" LowerBound="166.1" HigherBound="170.1">
+                                            <om:Property Name="Expression" Value="RestLoanUpdateException = new System.Exception(&quot;DLAP ACH Loan Update Rest Exception  -  &quot; + RestLoanMessage);&#xD;&#xA;&#xD;&#xA;Status = &quot;Error&quot;;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Rest Exception" />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Throw" OID="7b15476c-9822-4549-a5dc-a13ee6955193" ParentLink="ComplexStatement_Statement" LowerBound="170.1" HigherBound="172.1">
+                                            <om:Property Name="ThrownReference" Value="RestLoanUpdateException" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Rest Error " />
+                                            <om:Property Name="Signal" Value="True" />
+                                        </om:Element>
+                                        <om:Element Type="Terminate" OID="a644aaed-5aeb-4b7a-9571-48dbd9de04a6" ParentLink="ComplexStatement_Statement" LowerBound="172.1" HigherBound="174.1">
+                                            <om:Property Name="ErrorMessage" Value="&quot;An Exception occuered While Updating DLAP ACH Info&quot;;" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="Terminate" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="DecisionBranch" OID="c9f918d6-eb45-48dc-b5fc-37d9d14724a0" ParentLink="ReallyComplexStatement_Branch">
+                                        <om:Property Name="IsGhostBranch" Value="True" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Else" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="ea91452c-dd75-47a3-9084-329cf9b020f6" ParentLink="ComplexStatement_Statement" LowerBound="175.1" HigherBound="181.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct ACH Response Msg" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="f55b54ad-d767-43a6-86c6-ed7afb9ebbee" ParentLink="Construct_MessageRef" LowerBound="176.35" HigherBound="176.49">
+                                        <om:Property Name="Ref" Value="ACHResponseMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="9d90bc9e-638c-489d-9bf7-0e8586cda413" ParentLink="ComplexStatement_Statement" LowerBound="178.1" HigherBound="180.1">
+                                        <om:Property Name="ClassName" Value="DLAPACHLogic.MakeACHResponse" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Make ACH Response" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="4ec10053-fd84-4274-8f2e-9fda4d8c38e2" ParentLink="Transform_OutputMessagePartRef" LowerBound="179.40" HigherBound="179.66">
+                                            <om:Property Name="MessageRef" Value="ACHResponseMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="5e46d074-ef53-4ef6-bfe2-5295dcac26b8" ParentLink="Transform_InputMessagePartRef" LowerBound="179.100" HigherBound="179.137">
+                                            <om:Property Name="MessageRef" Value="RestLoanUpdateResponseMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="462a339b-636a-46ad-8e87-1860e00262d7" ParentLink="ComplexStatement_Statement" LowerBound="181.1" HigherBound="193.1">
+                                    <om:Property Name="Expression" Value="OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;&#xD;&#xA;&#xD;&#xA;SalesForceObjectId = ACHRequestMsg.MessagePart.LoanName;&#xD;&#xA;&#xD;&#xA;SalesForceObjectName=&quot;Loan__c&quot;;&#xD;&#xA;&#xD;&#xA;Stage =&quot;ACH Received&quot;;&#xD;&#xA;&#xD;&#xA;Status = xpath(ACHResponseMsg.MessagePart, &quot;string(/*[local-name()='ACHResponse' and namespace-uri()='http://SBA.gov/DLAPACH/ACHResponse']/*[local-name()='ACK' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;LoanName = xpath(ACHRequestMsg.MessagePart,&quot;string(/*[local-name()='ACHRequest' and namespace-uri()='http://SBA.gov/DLAPACH/ACHRequestRequest']/*[local-name()='LoanName' and namespace-uri()=''])&quot;);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set Event Log Values" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="9a261f0e-f8cc-418f-a730-86e45916adff" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="bd4751cf-01e9-4cb2-90c5-18f999c34ff5" ParentLink="ComplexStatement_Statement" LowerBound="196.1" HigherBound="200.1">
+                                    <om:Property Name="Expression" Value="RestLoanUpdateException = new System.Exception(&quot;DLAP ACH Loan Query Rest Exception  -  &quot; +&quot;Loan Name not found in the Salesfroce&quot;);&#xD;&#xA;&#xD;&#xA;Status = &quot;Error&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rest Exception" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Throw" OID="df611774-b3c9-4c75-a4d6-77ac8ce485fd" ParentLink="ComplexStatement_Statement" LowerBound="200.1" HigherBound="202.1">
+                                    <om:Property Name="ThrownReference" Value="RestLoanUpdateException" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Rest Error " />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="ae0c07d8-7638-4050-b28b-7c900e6937c9" ParentLink="Scope_Catch" LowerBound="206.1" HigherBound="279.1">
+                        <om:Property Name="ExceptionName" Value="AEx" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="System Exception" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="7a0a21bd-526c-4ee3-8492-b7c441cc11eb" ParentLink="Catch_Statement" LowerBound="209.1" HigherBound="261.1">
+                            <om:Property Name="Expression" Value="if(AEx.InnerException != null)&#xD;&#xA;{&#xD;&#xA;MessageTemp = AEx.InnerException.ToString();&#xD;&#xA;&#xD;&#xA;Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +&quot;Total String Length:&quot;+MessageTemp.Length.ToString();&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;DLAP ACH Exception&quot;,Message);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;MessageTemp = AEx.Message.ToString();&#xD;&#xA;&#xD;&#xA;Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +&quot;Total String Length:&quot;+MessageTemp.Length.ToString();&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;DLAP ACH Exception&quot;,Message);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;LoanName = xpath(ACHRequestMsg.MessagePart,&quot;string(/*[local-name()='ACHRequest' and namespace-uri()='http://SBA.gov/DLAPACH/ACHRequestRequest']/*[local-name()='LoanName' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if(!System.String.IsNullOrEmpty(ApplicationNumber))&#xD;&#xA;&#xD;&#xA;{&#xD;&#xA;  ApplicationNumber = ApplicationNumber;&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;else{ApplicationNumber = &quot;NoAppNumber&quot;;  }&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;SalesForceObjectId = ACHRequestMsg.MessagePart.LoanName;&#xD;&#xA;&#xD;&#xA;SalesForceObjectName=&quot;Loan&quot;;&#xD;&#xA;&#xD;&#xA;Stage =&quot;ACH Received&quot;;&#xD;&#xA;&#xD;&#xA;Status = &quot;Error&quot;;&#xD;&#xA;&#xD;&#xA;OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Set Error Values" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="a87441ce-319a-40fc-8dc8-3dfdde667690" ParentLink="Catch_Statement" LowerBound="261.1" HigherBound="272.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct Document List Fault Response Msg" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="c41699bb-282f-4e42-aa3e-2270ee3f6da3" ParentLink="ComplexStatement_Statement" LowerBound="264.1" HigherBound="271.1">
+                                <om:Property Name="Expression" Value="TempFaultResponse = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;TempFaultResponse.LoadXml(System.String.Format(@&quot;&lt;ns0:Fault xmlns:ns0='http://SBA.gov/DLAPACH/ACHFault'&gt;&lt;FaultString&gt;Exception:DLAP ACH&lt;/FaultString&gt;&lt;FaultCode&gt;{0}&lt;/FaultCode&gt;&lt;/ns0:Fault&gt;&quot;,System.Security.SecurityElement.Escape(Message)));&#xD;&#xA;&#xD;&#xA;ACHFaultResponseMsg.MessagePart = TempFaultResponse;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Document List Fault Response" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="0638dd50-382c-4c8a-a2e1-4955502db0eb" ParentLink="Construct_MessageRef" LowerBound="262.35" HigherBound="262.54">
+                                <om:Property Name="Ref" Value="ACHFaultResponseMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="4f4c30ee-1fc9-4c85-b1c8-03e8f23f8fcd" ParentLink="Catch_Statement" LowerBound="272.1" HigherBound="274.1">
+                            <om:Property Name="PortName" Value="ACHPort" />
+                            <om:Property Name="MessageName" Value="ACHFaultResponseMsg" />
+                            <om:Property Name="OperationName" Value="Operation" />
+                            <om:Property Name="OperationMessageName" Value="Fault" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Call" OID="6a289592-292a-449f-adf8-1ec57eb9aec3" ParentLink="Catch_Statement" LowerBound="274.1" HigherBound="276.1">
+                            <om:Property Name="Identifier" Value="CallOrchestration_2" />
+                            <om:Property Name="Invokee" Value="DLAPACH.EventRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SFEventLog" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Parameter" OID="44645fcf-9dcf-4c6c-be73-4bd2efbaeb99" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="ApplicationNumber" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="b247fb11-cb7c-4e83-8ebc-eddf7f5c3bf0" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="SalesForceObjectId" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="45132e77-2711-4929-872f-7391403f3f3e" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="Message" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="c8fb1c7a-2e08-4088-bafe-04056d705c4d" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="SalesForceObjectName" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="bf3c2efb-463d-4287-8e25-44093e4a136c" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="Stage" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="ead9cacf-82d7-482e-8111-b4b66a200faa" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="Status" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="4c2ed16f-7bdc-46f0-81ba-d9d2c2080e26" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="Empty" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="60e2b8ed-a0c8-4b5f-83a5-6548d3b69a62" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                                <om:Property Name="Type" Value="System.Guid" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="f00625f6-fce3-4de7-946a-2b71f25b7140" ParentLink="Catch_Statement" LowerBound="276.1" HigherBound="278.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;An error occurred while processing the DLAP ACH&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="1bb8cca7-7f27-406c-a361-02c4650b3f39" ParentLink="ServiceBody_Statement" LowerBound="281.1" HigherBound="283.1">
+                    <om:Property Name="PortName" Value="ACHPort" />
+                    <om:Property Name="MessageName" Value="ACHResponseMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send ACH Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="a1aadc11-b5ff-419b-80b6-671761566cec" ParentLink="ServiceBody_Statement" LowerBound="283.1" HigherBound="298.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Update Status?" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="4ac4747e-ade0-4973-b849-ff40a516d8a1" ParentLink="ReallyComplexStatement_Branch" LowerBound="284.13" HigherBound="291.1">
+                        <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Success" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="46a62ed9-81e9-4a08-a075-a11f8fc20602" ParentLink="ComplexStatement_Statement" LowerBound="286.1" HigherBound="290.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;Message = &quot;Successfully Updated LoanName:&quot;+LoanName;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Set Success Values For Salesforce" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="6904945b-14a2-408a-a485-7f1fe9431dd4" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Fail" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="869d4e77-f6ba-43f6-87e0-7a9da82f67b2" ParentLink="ComplexStatement_Statement" LowerBound="293.1" HigherBound="297.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;&#xD;&#xA;Message = &quot;Error Occured Updating LoanName:&quot;+LoanName;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Set Error Values For Salesforce" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Call" OID="00dc84fe-0b78-4dbc-a75c-4bb74247320d" ParentLink="ServiceBody_Statement" LowerBound="298.1" HigherBound="300.1">
+                    <om:Property Name="Identifier" Value="CallOrchestration_1" />
+                    <om:Property Name="Invokee" Value="DLAPACH.EventRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Call Event Log Orchestration" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Parameter" OID="ef2d3ed0-ab72-44ae-9cc9-3559d5c1143b" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="ApplicationNumber" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="5d13fbbe-fc36-4220-8369-1f2523432748" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="SalesForceObjectId" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="0778f653-b39e-4176-a17d-9f92a3628e03" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Message" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="a3182a42-bcaf-4769-8e5b-2bb8a32bd6ad" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="SalesForceObjectName" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="8e3dc8c7-1d9a-495c-8c73-3ef556af2dee" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Stage" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="54bd07e3-1c3a-434a-a633-130d507158cf" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Status" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="ee29dfe6-4196-4090-bfd5-85943057d727" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Empty" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="35cedb3f-74fb-4e12-b8f6-5314b9b219e1" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                        <om:Property Name="Type" Value="System.Guid" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="983671a4-b9f9-49c8-84c6-7c253c1a2098" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="56.1" HigherBound="58.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPACH.ACHPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ACHPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="86501777-7a66-41c9-9fe3-06f6cd3a6458" ParentLink="PortDeclaration_CLRAttribute" LowerBound="56.1" HigherBound="57.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4b7aa242-a4f5-4b6e-93fa-4761e585e272" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="58.1" HigherBound="60.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="14" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPACH.RestLoanQueryPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanQueryPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="54503ab5-cf42-4408-8363-e59aded482d1" ParentLink="PortDeclaration_CLRAttribute" LowerBound="58.1" HigherBound="59.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="04e5f4fb-342c-4348-9ef1-cc60264a1fdd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="60.1" HigherBound="62.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="53" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPACH.RestLoanUpdatePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestLoanUpdatePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7831b5ed-4755-4903-9df6-7a0636faae43" ParentLink="PortDeclaration_CLRAttribute" LowerBound="60.1" HigherBound="61.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module DLAPACH
+{
+    internal messagetype ACHRequestType
+    {
+        body DLAPACHDefinition.ACHRequest MessagePart;
+    };
+    internal messagetype ACHResponseType
+    {
+        body DLAPACHDefinition.ACHResponse MessagePart;
+    };
+    internal messagetype RestLoanUpdateRequestType
+    {
+        body DLAPACHSalesforceDefinition.RestLoan.SaveRequest MessagePart;
+    };
+    internal messagetype RestLoanUpdateResponseType
+    {
+        body DLAPACHSalesforceDefinition.RestLoan.results MessagePart;
+    };
+    internal messagetype ACHFaultResponseType
+    {
+        body DLAPACHDefinition.ACHFault MessagePart;
+    };
+    internal messagetype RestLoanQueryRequestType
+    {
+        body DLAPACHSalesforceDefinition.RestLoanQuery.Request MessagePart;
+    };
+    internal messagetype RestLoanQueryResponseType
+    {
+        body DLAPACHSalesforceDefinition.RestLoanQuery.QueryResult MessagePart;
+    };
+    internal porttype ACHPortType
+    {
+        requestresponse Operation
+        {
+            ACHRequestType, ACHResponseType, Fault = ACHFaultResponseType
+        };
+    };
+    internal porttype RestLoanQueryPortType
+    {
+        requestresponse Operation
+        {
+            RestLoanQueryRequestType, RestLoanQueryResponseType
+        };
+    };
+    internal porttype RestLoanUpdatePortType
+    {
+        requestresponse Operation
+        {
+            RestLoanUpdateRequestType, RestLoanUpdateResponseType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProcessLogic
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ACHPortType ACHPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses RestLoanQueryPortType RestLoanQueryPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses RestLoanUpdatePortType RestLoanUpdatePort;
+        message ACHRequestType ACHRequestMsg;
+        message ACHResponseType ACHResponseMsg;
+        message RestLoanUpdateRequestType RestLoanUpdateRequestMsg;
+        message RestLoanUpdateResponseType RestLoanUpdateResponseMsg;
+        message ACHFaultResponseType ACHFaultResponseMsg;
+        message RestLoanQueryRequestType RestLoanQueryRequestMsg;
+        message RestLoanQueryResponseType RestLoanQueryResponseMsg;
+        System.Guid OrchestrationInstanceId;
+        System.String Status;
+        System.String Stage;
+        System.String ApplicationNumber;
+        System.String SalesForceObjectName;
+        System.String SalesForceObjectId;
+        System.String Message;
+        System.String LoanName;
+        System.String MessageTemp;
+        System.Xml.XmlDocument TempFaultResponse;
+        System.String Empty;
+        System.String LoanNameInfo;
+        System.String SOQL_LoanInfo_QUERY;
+        System.String RestLoanSFID;
+        System.String RestLoanMessage;
+        System.String RestLoanNameID;
+        System.Exception RestLoanUpdateException;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cadd4502-49eb-4c86-95af-06445e7946f6")]
+            activate receive (ACHPort.Operation, ACHRequestMsg);
+            Status = "";
+            Stage = "";
+            ApplicationNumber = "";
+            SalesForceObjectName = "";
+            SalesForceObjectId = "";
+            Message = "";
+            LoanName = "";
+            MessageTemp = "";
+            TempFaultResponse = new System.Xml.XmlDocument();
+            Empty = "";
+            LoanNameInfo = "";
+            SOQL_LoanInfo_QUERY = "";
+            RestLoanSFID = "";
+            RestLoanMessage = "";
+            RestLoanNameID = "";
+            RestLoanUpdateException = new System.Exception();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7ff5e61d-f3f9-40c1-8ff8-11620620bc42")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3c01a032-23e1-4523-99bc-591651f8ce43")]
+                    construct RestLoanQueryRequestMsg
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("36b7afae-3333-468d-a89c-3bbb792109ea")]
+                        transform (RestLoanQueryRequestMsg.MessagePart) = DLAPACHLogic.MakeUpdateLoanRequest (ACHRequestMsg.MessagePart);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3e7df64c-01e7-4990-b927-295bfc56be7d")]
+                        //Construct SOQL Query
+                        
+                        
+                        LoanNameInfo = xpath(ACHRequestMsg.MessagePart,"string(/*[local-name()='ACHRequest' and namespace-uri()='http://SBA.gov/DLAPACH/ACHRequestRequest']/*[local-name()='LoanName' and namespace-uri()=''])");
+                        
+                        SOQL_LoanInfo_QUERY = @"SELECT Id, Name,Application__r.Name FROM Loan__c WHERE Name IN "+"("+"'"+LoanNameInfo+"'"+")";
+                        
+                        RestLoanQueryRequestMsg(DLAPACHSalesforceDefinition.SOQL_LoanId_QUERY) = SOQL_LoanInfo_QUERY; 
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9dba8d47-f655-4096-a957-ba990def8e92")]
+                    send (RestLoanQueryPort.Operation, RestLoanQueryRequestMsg);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("181fbe45-a0a1-498f-91cd-4e42c9d2fd99")]
+                    receive (RestLoanQueryPort.Operation, RestLoanQueryResponseMsg);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a1ac0205-4fa3-46e7-8872-73f67dfeb3b8")]
+                    
+                    RestLoanSFID = xpath(RestLoanQueryResponseMsg.MessagePart,"string(/*[local-name()='QueryResult' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='records' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='Id' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan'])");
+                    
+                    ApplicationNumber = xpath(RestLoanQueryResponseMsg.MessagePart,"string(/*[local-name()='QueryResult' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='records' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='Application__r' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan']/*[local-name()='Name' and namespace-uri()='http://SBA.gov/DLAPACH/REST/QUERY/Loan'])");
+                    
+                    OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;
+                    
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b4dc74f-7a6b-4614-b960-6475a094586c")]
+                    if ((!System.String.IsNullOrEmpty(RestLoanSFID)))
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2fe45d13-4aa2-4716-ab4a-8e19f1c89fcb")]
+                        construct RestLoanUpdateRequestMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("033bb38e-4cd2-4f26-bc6f-4abde9772fd2")]
+                            transform (RestLoanUpdateRequestMsg.MessagePart) = DLAPACHLogic.MakeRestLoanUpdateRequest (ACHRequestMsg.MessagePart);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("489003ad-2ff6-4261-b82b-85015185867b")]
+                            xpath(RestLoanUpdateRequestMsg.MessagePart,"/*[local-name()='SaveRequest' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='records' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='Id' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']") = RestLoanSFID;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("64d4b83d-c21a-4a54-af72-18e6b64eb256")]
+                        send (RestLoanUpdatePort.Operation, RestLoanUpdateRequestMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("07515f82-a111-432d-b9dc-027b732f2c90")]
+                        receive (RestLoanUpdatePort.Operation, RestLoanUpdateResponseMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("77f00183-29ed-4776-81b5-e06777fd6cc8")]
+                        
+                        
+                        RestLoanMessage = xpath(RestLoanUpdateResponseMsg.MessagePart,"string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='errors' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='message' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan'])");
+                        
+                        
+                        RestLoanNameID = xpath(RestLoanUpdateResponseMsg.MessagePart,"string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan']/*[local-name()='id' and namespace-uri()='http://SBA.gov/DLAPACH/REST/INSERT/Loan'])");
+                        
+                        
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a5883a29-9d55-4460-8878-23e81db123d1")]
+                        if (!System.String.IsNullOrWhiteSpace(RestLoanMessage) && (RestLoanNameID.Length == 0))
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5593b678-ee85-45c7-bcae-ee308c73c5b9")]
+                            RestLoanUpdateException = new System.Exception("DLAP ACH Loan Update Rest Exception  -  " + RestLoanMessage);
+                            
+                            Status = "Error";
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7b15476c-9822-4549-a5dc-a13ee6955193")]
+                            throw RestLoanUpdateException;
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a644aaed-5aeb-4b7a-9571-48dbd9de04a6")]
+                            terminate "An Exception occuered While Updating DLAP ACH Info";;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ea91452c-dd75-47a3-9084-329cf9b020f6")]
+                        construct ACHResponseMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d90bc9e-638c-489d-9bf7-0e8586cda413")]
+                            transform (ACHResponseMsg.MessagePart) = DLAPACHLogic.MakeACHResponse (RestLoanUpdateResponseMsg.MessagePart);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("462a339b-636a-46ad-8e87-1860e00262d7")]
+                        OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;
+                        
+                        SalesForceObjectId = ACHRequestMsg.MessagePart.LoanName;
+                        
+                        SalesForceObjectName="Loan__c";
+                        
+                        Stage ="ACH Received";
+                        
+                        Status = xpath(ACHResponseMsg.MessagePart, "string(/*[local-name()='ACHResponse' and namespace-uri()='http://SBA.gov/DLAPACH/ACHResponse']/*[local-name()='ACK' and namespace-uri()=''])");
+                        
+                        LoanName = xpath(ACHRequestMsg.MessagePart,"string(/*[local-name()='ACHRequest' and namespace-uri()='http://SBA.gov/DLAPACH/ACHRequestRequest']/*[local-name()='LoanName' and namespace-uri()=''])");
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd4751cf-01e9-4cb2-90c5-18f999c34ff5")]
+                        RestLoanUpdateException = new System.Exception("DLAP ACH Loan Query Rest Exception  -  " +"Loan Name not found in the Salesfroce");
+                        
+                        Status = "Error";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("df611774-b3c9-4c75-a4d6-77ac8ce485fd")]
+                        throw RestLoanUpdateException;
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ae0c07d8-7638-4050-b28b-7c900e6937c9")]
+                    catch (System.Exception AEx)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7a0a21bd-526c-4ee3-8492-b7c441cc11eb")]
+                        if(AEx.InnerException != null)
+                        {
+                        MessageTemp = AEx.InnerException.ToString();
+                        
+                        Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +"Total String Length:"+MessageTemp.Length.ToString();
+                        
+                        System.Diagnostics.EventLog.WriteEntry("DLAP ACH Exception",Message);
+                        
+                        }
+                        
+                        else
+                        {
+                        MessageTemp = AEx.Message.ToString();
+                        
+                        Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +"Total String Length:"+MessageTemp.Length.ToString();
+                        
+                        System.Diagnostics.EventLog.WriteEntry("DLAP ACH Exception",Message);
+                        }
+                        
+                        
+                        LoanName = xpath(ACHRequestMsg.MessagePart,"string(/*[local-name()='ACHRequest' and namespace-uri()='http://SBA.gov/DLAPACH/ACHRequestRequest']/*[local-name()='LoanName' and namespace-uri()=''])");
+                        
+                        
+                        if(!System.String.IsNullOrEmpty(ApplicationNumber))
+                        
+                        {
+                          ApplicationNumber = ApplicationNumber;
+                        
+                        }
+                        
+                        else{ApplicationNumber = "NoAppNumber";  }
+                        
+                        
+                        
+                        
+                        
+                        SalesForceObjectId = ACHRequestMsg.MessagePart.LoanName;
+                        
+                        SalesForceObjectName="Loan";
+                        
+                        Stage ="ACH Received";
+                        
+                        Status = "Error";
+                        
+                        OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;
+                        
+                        
+                        
+                        
+                        
+                        
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a87441ce-319a-40fc-8dc8-3dfdde667690")]
+                        construct ACHFaultResponseMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c41699bb-282f-4e42-aa3e-2270ee3f6da3")]
+                            TempFaultResponse = new System.Xml.XmlDocument();
+                            
+                            TempFaultResponse.LoadXml(System.String.Format(@"<ns0:Fault xmlns:ns0='http://SBA.gov/DLAPACH/ACHFault'><FaultString>Exception:DLAP ACH</FaultString><FaultCode>{0}</FaultCode></ns0:Fault>",System.Security.SecurityElement.Escape(Message)));
+                            
+                            ACHFaultResponseMsg.MessagePart = TempFaultResponse;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4f4c30ee-1fc9-4c85-b1c8-03e8f23f8fcd")]
+                        send (ACHPort.Operation.Fault, ACHFaultResponseMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6a289592-292a-449f-adf8-1ec57eb9aec3")]
+                        call DLAPACH.EventRequest (ApplicationNumber, SalesForceObjectId, Message, SalesForceObjectName, Stage, Status, Empty, OrchestrationInstanceId);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f00625f6-fce3-4de7-946a-2b71f25b7140")]
+                        terminate "An error occurred while processing the DLAP ACH";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1bb8cca7-7f27-406c-a361-02c4650b3f39")]
+            send (ACHPort.Operation, ACHResponseMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a1aadc11-b5ff-419b-80b6-671761566cec")]
+            if (Status == "Success")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("46a62ed9-81e9-4a08-a075-a11f8fc20602")]
+                
+                
+                Message = "Successfully Updated LoanName:"+LoanName;
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("869d4e77-f6ba-43f6-87e0-7a9da82f67b2")]
+                
+                
+                Message = "Error Occured Updating LoanName:"+LoanName;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("00dc84fe-0b78-4dbc-a75c-4bb74247320d")]
+            call DLAPACH.EventRequest (ApplicationNumber, SalesForceObjectId, Message, SalesForceObjectName, Stage, Status, Empty, OrchestrationInstanceId);
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\Binding.xml
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\BizTalkServerInventory.json
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHApplication.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHApplication.pdb
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHDefinition.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHLogic.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHSalesforceDefinition.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHDefinition.pdb
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHLogic.pdb
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\bin\Debug\DLAPACHSalesforceDefinition.pdb
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\obj\Debug\DLAPACHApplication.btaprojResolveAssemblyReference.cache
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\obj\Debug\DLAPACHApplication.dll
+C:\Users\Apudota\Documents\GitAzureRepo\DLAP ACH\DLAPACHApplication\obj\Debug\DLAPACHApplication.pdb
